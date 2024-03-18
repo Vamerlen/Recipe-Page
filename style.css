@@ -1,0 +1,115 @@
+:root {
+
+    /* NEUTRAL COLOR */
+
+    --white: hsl(0, 0%, 100%);
+    --rosewhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightgrey: hsl(30, 18%, 87%);
+    --wengebrown: hsl(30, 10%, 34%);
+    --darkcharcoal: hsl(24, 5%, 18%);
+
+    /* PRIMARY COLORS */
+
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkraspberry: hsl(332, 51%, 32%);
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: var(--rosewhite);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--white);
+    width: 46rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.25rem;
+    padding-top: 2.25rem;
+    border-radius: 1.25rem;
+    padding-right: -2.25rem;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+h3 {
+    color: var(--darkraspberry);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+img {
+    height: 18.75rem;
+    border-radius: 10px;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 2.5rem;
+    color: var(--darkcharcoal);
+    padding-bottom: 1.875rem;
+}
+
+li {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--darkcharcoal);
+    padding-bottom: 1.25rem;
+    list-style-image: var(--darkraspberry);
+}
+
+.time {
+    padding: 1.875rem;
+    width: 41.3125rem;
+    height: auto;
+    background-color: var(--rosewhite);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Young Serif', serif;
+    color: var(--nutmeg);
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.special {
+    list-style-type: square;
+    list-style-image: var(--nutmeg);
+}
+
+section {
+    border-bottom: 1px solid var(--lightgrey);
+}
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pd {
+    padding-bottom: 1.25rem;
+    list-style-image: var(--nutmeg);
+}
+
+
+.t {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
