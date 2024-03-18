@@ -1,115 +1,192 @@
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
 
-    /* NEUTRAL COLOR */
-
-    --white: hsl(0, 0%, 100%);
-    --rosewhite: hsl(330, 100%, 98%);
-    --eggshell: hsl(30, 54%, 90%);
-    --lightgrey: hsl(30, 18%, 87%);
-    --wengebrown: hsl(30, 10%, 34%);
-    --darkcharcoal: hsl(24, 5%, 18%);
-
-    /* PRIMARY COLORS */
-
-    --nutmeg: hsl(14, 45%, 36%);
-    --darkraspberry: hsl(332, 51%, 32%);
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --RoseWhite: hsl(330, 100%, 98%);
+
+    --font1: "Outfit", sans-serif;
+    --font2: "Young Serif", serif;
+}
 
 body {
-    background-color: var(--rosewhite);
+    max-width: 200vw;
+    height: auto;
+    background-color: var(--Eggshell);
+}
+
+.recipe-page-section {
+    max-width: 200vw;
+    margin: 90px 0px;
     display: grid;
     place-items: center;
 }
 
-.container {
-    background-color: var(--white);
-    width: 46rem;
-    padding-bottom: 2.5rem;
-    padding-left: 2.25rem;
-    padding-top: 2.25rem;
-    border-radius: 1.25rem;
-    padding-right: -2.25rem;
-}
-
-h1 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-size: 2.25rem;
-}
-
-h3 {
-    color: var(--darkraspberry);
-    font-family: "Outfit", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
+.recipe-page-content-container {
+    max-width: 100%;
+    width: 700px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
 }
 
 img {
-    height: 18.75rem;
-    border-radius: 10px;
+    max-width: 100%;
+    width: 700px;
+    padding: 20px;
+    border-radius: 28px;
 }
 
-p {
-    font-family: "Outfit", sans-serif;
-    font-size: 1rem;
+.recipe-page-content-container h1 {
+    font-family: var(--font2);
     font-weight: 400;
-    padding-top: 2.5rem;
-    color: var(--darkcharcoal);
-    padding-bottom: 1.875rem;
+    font-size: 2.2em;
+    color: var(--DarkCharcoal);
+    margin: 5px;
+    padding: 5px 18px;
 }
 
-li {
-    font-family: "Outfit", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--darkcharcoal);
-    padding-bottom: 1.25rem;
-    list-style-image: var(--darkraspberry);
+.recipe-page-content-container p {
+    color: var(--WengeBrown);
+    font-family: var(--font1);
+    margin: 5px;
+    padding: 5px 20px;
 }
 
-.time {
-    padding: 1.875rem;
-    width: 41.3125rem;
-    height: auto;
-    background-color: var(--rosewhite);
-    border-radius: 10px;
-    margin-bottom: 2rem;
+.preparation-container {
+    background-color: var(--RoseWhite);
+    margin: 10px 30px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: var(--font1);
+}
+
+.preparation-container h3 {
+    color: var(--DarkRaspberry);
+}
+
+.preparation-list {
+    padding: 15px 25px;
+    color: var(--WengeBrown);
+}
+
+.preparation-list>li {
+    padding: 5px;
+}
+
+.preparation-list li>span {
+    font-weight: 700;
+    padding-left: 5px;
 }
 
 h2 {
-    font-family: 'Young Serif', serif;
-    color: var(--nutmeg);
-    font-size: 1.875rem;
+    font-family: var(--font2);
     font-weight: 400;
+    color: var(--Nutmeg);
+    margin: 5px;
+    padding: 10px 22px;
 }
 
-.special {
-    list-style-type: square;
-    list-style-image: var(--nutmeg);
+.ingredients-list {
+    list-style-position: inside;
+    margin: 2px;
+    padding: 0 30px;
+    font-family: var(--font1);
+    color: var(--WengeBrown);
 }
 
-section {
-    border-bottom: 1px solid var(--lightgrey);
+.ingredients-list>li {
+    padding: 5px;
 }
 
-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.ingredients-list li>span {
+    padding-left: 5px;
 }
 
-.pd {
-    padding-bottom: 1.25rem;
-    list-style-image: var(--nutmeg);
+.sepration-line {
+    border-top: 1px solid var(--LightGrey);
+    width: 90%;
+    margin: 30px 30px 10px;
+    align-self: center;
 }
 
+.instruction-list {
+    margin: 5px 20px;
+    padding: 2px 30px;
+    list-style-position: outside;
+    font-family: var(--font1);
+}
 
-.t {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+.instruction-list>li {
+    padding: 8px;
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+
+.instruction-list>li>span:nth-child(1) {
+    color: var(--WengeBrown);
+}
+
+.instruction-list>li>span:nth-child(2) {
+    font-weight: 400;
+    color: var(--WengeBrown);
+}
+
+.nutriton-container {
+    display: flex;
+    margin: 10px 35px;
+    font-family: var(--font1);
+    color: var(--WengeBrown);
+    border-bottom: 1px solid var(--LightGrey);
+    align-items: center;
+}
+
+.nutriton-name {
+    width: 50%;
+    margin-left: 1em;
+}
+
+.nutriton {
+    grid-column: 2;
+    width: 50%;
+    font-weight: 700;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.nutriton>span {
+    color: var(--Nutmeg);
+}
+
+.nutriton-container:nth-last-of-type(1) {
+    border: none;
+}
+
+@media screen and (max-width: 700px) {
+    .recipe-page-section {
+        margin: 0;
+    }
+
+    .recipe-page-content-container {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
 }
